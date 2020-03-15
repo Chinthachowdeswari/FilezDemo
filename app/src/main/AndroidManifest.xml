@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.filez">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".studentlogin" />
+        <activity android:name=".facultylogin" />
+        <activity android:name=".adminlogin" />
+        <activity android:name=".addfaculty" />
+        <activity android:name=".addstudent" />
+        <activity android:name=".viewdata" />
+        <activity android:name=".feedback" />
+        <activity android:name=".updatefacultyprofile" />
+        <activity android:name=".uploadmaterials" />
+        <activity android:name=".updatestudentprofile" />
+        <activity android:name=".viewmaterials" />
+        <activity android:name=".forgetpass" />
+        <activity android:name=".ree" />
+        <activity android:name=".student" />
+        <activity android:name=".faculty" />
+        <activity android:name=".Home"></activity>
+    </application>
+
+</manifest>

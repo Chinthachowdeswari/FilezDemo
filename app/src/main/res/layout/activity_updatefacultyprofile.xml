@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    android:orientation="vertical"
+    tools:context=".updatefacultyprofile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:text="NAME :"
+                android:textStyle="bold|italic"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter Your Name" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:textStyle="bold|italic"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:text="Date Of Birth :" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Enter Your date of birth" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Phone Number :"
+                android:textStyle="bold|italic"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/phno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter Your ph.no" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="E-mail :"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Your personal E-mailID" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold|italic"
+                android:text="Address :" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="H.no/Street/Town/District/State" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold|italic"
+                android:text="Hobbies :" />
+
+            <EditText
+                android:id="@+id/hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter Your Hobbies" />
+
+            <Button
+                android:id="@+id/savedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="save"
+                android:padding="10dp"
+                android:text="Save Data"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/editprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textStyle="bold|italic"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
